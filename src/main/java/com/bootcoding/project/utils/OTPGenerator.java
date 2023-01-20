@@ -3,15 +3,27 @@ package com.bootcoding.project.utils;
 import java.util.Random;
 
 public class OTPGenerator {
-    static Random random=new Random();
-     static final int MAX=99999;
-     static final int MIN=10000;
 
-    public static int getOTP(){
-        return MIN+random.nextInt(MAX-MIN);
+    final static int MAX = 999999;
+    final static int MIN = 100000;
+    static Random random = new Random();
+
+    // Naming Convntion - Kaam - Naam
+    public static int getRandomOTP() {
+        int number = random.nextInt(MAX - MIN); // 899999
+        int otp = MIN + number;
+        //System.out.println(" OTP Number = " + otp);
+        return otp;
     }
+
+    // Signature
+    // Implementation
+    // Calling - Invoation
+
     public static void main(String[] args) {
-       int otp= OTPGenerator.getOTP();
-        System.out.println(otp);
+        for (int i = 0; i < 100; i++) {
+            OTPGenerator.getRandomOTP();
+        }
     }
+
 }

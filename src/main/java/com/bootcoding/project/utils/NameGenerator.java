@@ -2,9 +2,12 @@ package com.bootcoding.project.utils;
 
 import java.util.Random;
 
-public class CityGenerator {
+public class NameGenerator {
     private static String[] names =
-            {"Nagpur", "Wardha", "Bhandara", "Ramtek", "Jabalpur", "Hyderabad", "Pune"};
+            {"Ramesh", "Suresh", "Jayesh", "Ganesh",
+                    "Mahesh", "Rajesh", "Mitesh", "Dinesh",
+                    "Pooja", "Priya", "Pinky",
+                    "Manisha", "Usha", "Asha", "Diksha", "Nisha"};
 
     public static String getName() {
         Random random = new Random();
@@ -13,7 +16,7 @@ public class CityGenerator {
     }
 
     public static void main(String[] args) {
-        CityGenerator.getName();
+        NameGenerator.getName();
     }
 }
 

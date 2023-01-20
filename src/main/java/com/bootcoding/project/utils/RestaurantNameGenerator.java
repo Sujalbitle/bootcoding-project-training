@@ -8,8 +8,8 @@ public class RestaurantNameGenerator {
 
     private static Random random = new Random();
 
+    public static int randomIndex = random.nextInt(RestaurantName.length);
     public static String getName(){
-        int randomIndex = random.nextInt(RestaurantName.length);
 
         return RestaurantName[randomIndex];
     }
